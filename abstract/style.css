@@ -6,9 +6,56 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: auto;
-    width: 80%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.header p {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.header p:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+span {
+    color: white;
+    font-size: 3rem;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+
+.help {
+    height: 42vh;
+    background-color: #dadbf1;
+}
+
+.main {
+    height: 100vh;
+    background-color: #fff;
+}
+
+.footer {
+    height: 40vh;
     background-color: black;
 }

@@ -7,14 +7,13 @@ body {
     padding: 0;
     margin: auto;
     width: 100%;
-    overflow: auto;
     display: flex;
     flex-direction: column;
 }
 
 .header {
     background-color: black;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     align-items: center;
     padding: 0;
@@ -119,15 +118,46 @@ input {
     fill: #000000;
     position: absolute;
     right: 460px;
-    bottom: 416px;
+    bottom: 400px;
     width: 28px;
     z-index: 100;
     transition: all .3s;
 }
 
+.search svg:hover {
+    fill: #4C5FD5;
+}
+
 .main {
     height: 100vh;
     background-color: #fff;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    width: 75%;
+    align-items: flex-start;
+}
+
+.article-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.article-logo {
+    max-height: 120px;
+    margin-right: 30px;
 }
 
 .footer {

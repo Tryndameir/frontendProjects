@@ -2,6 +2,18 @@ html {
     font-size: 16px;
 }
 
+@media (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 9px;
+    }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -111,14 +123,21 @@ input {
 .search {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+@media (max-width: 760px) {
+    .search {
+        width: 350px;
+    }
 }
 
 .search svg {
     transform: translateY(-50%);
     fill: #000000;
     position: absolute;
-    right: 460px;
-    bottom: 400px;
+    right: 10px;
+    bottom: -30px;
     width: 28px;
     z-index: 100;
     transition: all .3s;
@@ -176,4 +195,17 @@ input {
 .footer {
     height: 40vh;
     background-color: black;
+    display: flex;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 30px;
+}
+
+.footer li {
+    list-style-type: none;
+    padding: 30px 0 30px 0;
 }
